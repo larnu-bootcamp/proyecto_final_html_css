@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  body {
+    background-image: url("/img/green.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: [y0]1fr[y1] 1fr[y2] 1fr[y3] 1fr[y4] 1fr[y5] 1fr[y6] 1fr[y7] 1fr[y8] 1fr[y9];
+    grid-template-rows: [x0]1fr[x1] 1fr[x2] 1fr[x3] 1fr[x4] 1fr[x5] 1fr[x6] 1fr[x7] 1fr[x8] 1fr[x9];
+  }
+  
+  /*header*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #009872;
+    grid-column-start: y0;
+    grid-column-end: y11;
+    grid-row-start: x0;
+    grid-row-end: x1;
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .company_icon{
+    width: 20%;
+  }
+  .navbar {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding-right: 6vw;
+  }
+  a{
+    color: black;
+  }
+  a:hover{
+    color: white;
+  }
+  .container {
+  grid-column-start: y2;
+  grid-column-end: y7;
+  grid-row-start: x2;
+  grid-row-end: x7;
+  }
+  .container p{
+    color: white;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*footer*/
+  .footer {
+    display: grid;
+    grid-template-columns: [fy0]1fr[fy1] 1fr[fy2] 1fr[fy3] 1fr[fy4] 1fr[fy5] ;
+    grid-template-rows: [fx0]1fr[fx1] 1fr[fx2];
+    background-color: #009872;
+    grid-column-start: y0;
+    grid-column-end: y10;
+    grid-row-start: x9;
+    grid-row-end: x10;
+    height: 10vh;
+    gap: 5px;
+  }
+  .rss_icon{
+    width: 10%;
+  }
+  .icon_container{
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+  .link{
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+  .tag{
+    display: grid;
+    grid-column-start: fy2;
+    grid-column-end: fy4;
+    grid-row-start: fx1;
+    grid-row-end: fx2;
+  }
